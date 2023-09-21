@@ -1,0 +1,254 @@
+.projeto-container {
+  max-width: 610px;
+  margin: 0 auto;
+}
+
+.projeto-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.pdi-logo {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.fases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 0px;
+  border-radius: 4px;
+  outline: 1px solid #ced4da;
+  background-color: #ced4da;
+}
+
+.fases-list > li {
+  background-color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition-property: border-color, box-shadow, background-color;
+  transition-duration: 0.3s;
+  position: relative;
+}
+.fases-list > li:first-child {
+  border-radius: 4px 4px 0 0;
+}
+.fases-list > li:last-child {
+  border-radius: 0 0 4px 4px;
+}
+.fases-list > li:hover {
+  z-index: 5;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.myInput {
+  border-radius: 0.375rem;
+  padding: 6px 12px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.myInput:focus,
+.myInput:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.add-fase-btn {
+  border: 1px solid #ced4da;
+  color: #ced4da;
+  border-radius: 4px;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.add-fase-btn:hover {
+  border: 1px solid gray;
+  color: grey;
+}
+
+.save-btn {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 12px;
+  display: block;
+  width: 100%;
+}
+
+.save-btn-inactive {
+  background-color: #ced4da;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.save-btn:hover {
+  background-color: #0b5ed7;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.form-label > span {
+  color: red;
+}
+
+.rotate {
+  width: 100px;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.dropbtn {
+  /* background-color: #4CAF50; */
+  /* color: white; */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.myDropdown {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  padding-left: 32px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(115, 113, 148, 0) 0%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+
+.dropdown-content {
+  outline: 1px solid #ced4da;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  white-space: nowrap;
+  color: black;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dropdown-content a:last-child {
+  color: red;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  } */
+
+.more-icon {
+  box-sizing: content-box;
+  padding: 4px;
+  border-radius: 4px;
+  display: none;
+  z-index: 3;
+}
+.more-icon:hover {
+  background-color: #ced4da;
+}
+
+.fase-item:hover .more-icon {
+  display: block;
+}
+
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 2;
+}
+
+.block {
+  display: block;
+}
+
+.loading-overlay {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #7d7d7d;
+  font-weight: 600;
+}
+
+.loading-content {
+}

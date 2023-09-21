@@ -1,0 +1,15 @@
+.entregavel-item {
+  display: flex;
+  gap: 16px;
+}
+
+.entregavel-item p {
+  margin: auto;
+  flex: 1;
+}
+
+.entregavel-item-quantidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,88 @@
+.modal-overlay {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myModal .modal-content > div {
+  padding: 16px;
+}
+
+#myModal p {
+  margin: 0;
+}
+
+#myModal .modal-main {
+  border: 1px solid #ced4da;
+  border-width: 1px 0px;
+  padding: 20px;
+}
+
+#myModal .modal-header {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+#myModal .modal-footer {
+  display: flex;
+  gap: 12px;
+  background-color: #f9fafb;
+}
+#myModal .modal-footer button {
+  background-color: #e0e1e2;
+  border-radius: 4px;
+  padding: 6px 16px;
+}
+
+#myModal .modal-footer button:hover {
+  background-color: #d3d3d3;
+}
+
+#myModal > .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ced4da;
+  max-width: 610px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#myModal .modal-footer {
+  display: flex;
+  font-size: 0.875rem;
+  gap: 12px;
+  background-color: #f9fafb;
+}
+
+#myModal .modal-footer button.save-btn {
+  background-color: #0d6efd;
+}
+#myModal .modal-footer button.save-btn:hover {
+  background-color: #0b5ed7;
+}
+#myModal .modal-footer button.delete-btn {
+  background-color: #c83b33;
+  color: white;
+}

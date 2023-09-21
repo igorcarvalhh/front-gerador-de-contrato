@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+}
+
+.etapasContainer {
+    min-width: 315px;
+}
+
+.custosContainer {
+    min-width: 610px;
+}
+.custosItem {
+    display: flex;
+    gap: 8px;
+}
+
+.empresasContainer {
+
+    flex-grow: 1;
+}

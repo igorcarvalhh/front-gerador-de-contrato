@@ -1,0 +1,61 @@
+.etapas-list {
+}
+
+.add-entregavel p {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.add-entregavel p::before,
+.add-entregavel p::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 0px solid #ced4da;
+  margin: auto;
+  padding: 0 4px;
+}
+
+.add-entregavel:hover p::before,
+.add-entregavel:hover p::after {
+  border-bottom: 1px solid blue;
+}
+
+.add-entregavel span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px;
+  color: #ced4da;
+}
+.add-entregavel:hover span {
+  color: blue;
+}
+
+.add-entregavel svg {
+  color: blue;
+}
+
+.active-icon {
+  display: none;
+}
+
+.add-entregavel:hover .inactive-icon {
+  display: none;
+}
+.add-entregavel:hover .active-icon {
+  display: block;
+}
+
+.fases-list > .etapas-header {
+  background-color: #474747;
+}
+
+.fases-list > .etapas-header p {
+  color: white;
+  margin: 0;
+}
+
+etapas-header:hover .myDropdown {
+  background-color: #474747;
+}

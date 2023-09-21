@@ -1,0 +1,27 @@
+.add-entregavel-data {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #ced4da;
+}
+
+.add-entregavel-data textarea {
+  flex: 1;
+  margin-bottom: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.add-entregavel-save {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+  padding-top: 8px;
+}
+
+.add-entregavel-save button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #ced4da;
+}

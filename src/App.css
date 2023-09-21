@@ -1,0 +1,9 @@
+.content__container {
+  max-width: 610px;
+  margin: 32px auto;
+}
+
+.content__container--large {
+  max-width: 810px;
+  margin: 32px auto;
+}

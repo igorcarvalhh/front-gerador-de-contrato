@@ -1,0 +1,19 @@
+{
+  "faseId": 126,
+  "prazo": "6 Meses",
+  "numero": 5,
+  "entregaveisList": [
+    {
+      "quantidade": 1,
+      "descricao": "Projeto preliminar de hardware do receptor, rádio modular (contendo a parte de rádio e comunicação ótica e sensores de prateleira)."
+    },
+    {
+      "quantidade": 1,
+      "descricao": "Protótipo de Rádio Receptor utilizando kits (COTS)"
+    },
+    {
+      "quantidade": 3,
+      "descricao": "Protótipos de Rádios Modulares utilizando kits (COTS)"
+    }
+  ]
+}
